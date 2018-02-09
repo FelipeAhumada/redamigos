@@ -1,0 +1,135 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}Club Amigos{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/entel_chile.ico"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media.css' %}">
+</head>
+<body data-spy="scroll">
+    {% block header %}
+	<section id="home" class="first-section">
+		<nav class="navbar navbar-default navbar-fixed-top navbar-orange">
+			<div class="container-fluid">
+			    <div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+			      	<a class="navbar-brand hidden-sm hidden-xs" href="#">
+			      		<!-- <img id="logo-left" class="img-responsive" src="{% static 'img/logo.png' %}" width="150" alt="logo"> -->
+			      	</a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+                        <li><a href="#registrate">Regístrate</a></li>
+                        <li><a href="#descarga">Descarga</a></li>
+						<li><a href="#login" class="fa fa-user fa-2x hidden-sm hidden-xs" aria-hidden="true"></a></li>
+					</ul>
+			    </div>
+			</div>
+        </nav>
+        <div id="cuadro-text">
+                <span> Club <strong>@</strong>migos <strong>_ </strong></span>
+        </div>
+        <div id="cuadro-text2">
+                <span><strong style="color:#FF7400">{</strong>Regístrate<strong style="color:#FF7400">}</strong></span>
+            </div>  
+    </section>
+    {% endblock %}
+    
+    {% block content %}
+<!-- registrate -->
+	<section class="container-fluid" id="registrate">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-10  col-xs-10 caja-azul">
+					<div>
+                        <h2 class="mt-1"><strong style="color:#FF7400">_¿Cómo</strong> Regístrarte?</h2>
+						<div>
+                            <img id="aster" class="img-responsive" src="{% static 'img/asterisco_06.png' %}" alt="">
+						</div>
+						<div id="checks">
+                                <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>  Descarga la app<br>
+                                <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>  Regístrate<br>
+                                <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>  y vende!<br><br>
+						</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5">
+                            <img id="section2" class="img-responsive" src="{% static 'img/748820.jpg' %}" alt="">
+                        </div>
+                        <div id="text1" class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <h2>Club@migos_</h2>
+                            <p class="lead">La versión actualizada de Entel está llena de nuevas funciones para gestionar aún más fácil y rápido tus ventas.</p>
+                        </div>
+                    </div>
+                </div>					
+            </div>
+	</section>
+<!-- descarga -->
+    <section class="container-fluid" id="descarga">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-10  col-xs-10 caja-descarga">
+                    <div>
+                        <h2 class="mt-0"><strong style="color:#FF7400">_¿Cómo</strong> funciona?</h2> 
+                        
+                        <div id="checks2">
+                            <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>  Scanear código<br>
+                            <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>  Enviar<br>
+                            <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>  Listo!<br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 offset-2 col-sm-12 col-xs-12" >
+                            <div id="llave">
+                                <img class="img-responsive hidden-sm hidden-xs" src="{% static 'img/llave.jpg' %}" alt="">
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=red.arroba.alpha&hl=es" target="_blank"><img id="section3" class="img-responsive" src="{% static 'img/playstore.png' %}" alt=""></a>
+                            <a href="https://i.diawi.com/to3UQP" target="_blank"><img id="section4" class="img-responsive" src="{% static 'img/appstore.jpg' %}" alt=""></a>
+                        </div>
+                        <div id="text" class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <h2>Descarga la Nueva App</h2>
+                            <p class="lead">Sólo debes scanear el código de barra y estarás a sólo un click de reportar tus ventas.</p>
+                        </div>
+                    </div>
+                </div>					
+            </div>
+    </section>
+    {% endblock %}
+    
+    {% block footer %}
+<!-- footer -->
+	<section id="footer"class="pie">
+    <footer>
+            <div class="footerHeader" ></div>
+            <div class="container">
+                <div class="col-md-6" >
+                        <!-- <img id="logo-end" class="img-responsive" src="{% static 'img/logo-footer.png' %}" alt="logo"> -->
+                </div>
+                <div class="col-md-6" >
+                    <h2 id="txt-footer"><strong style="color:#FF7400">_¿Necesitas</strong> ayuda?</h2> 
+                    <ul>
+                        <li><i class="fa fa-whatsapp" aria-hidden="true" ></i> 123 - 456 - 789</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> support@icov.cl</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> 123 - 456 - 789</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </section>
+    {% endblock %}
+    <!-- <a id="help" href='#footer'><img border='0' style='right:0;' src="{% static 'img/help.png' %}" width="65" title="¿Necesitas ayuda?_" /></a> -->
+	<script src="https://use.fontawesome.com/8f8db047c3.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

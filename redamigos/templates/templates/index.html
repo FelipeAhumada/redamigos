@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<!-- registrate -->
+	<section class="container-fluid" id="registrate">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-10  col-xs-10 caja-azul">
+					<div>
+                        <h2 class="mt-1"><strong style="color:#FF7400">_¿Cómo</strong> Regístrarte?</h2>
+						<div>
+                            <img id="aster" class="img-responsive" src="{% static 'img/asterisco_06.png' %}" alt="">
+						</div>
+						<div id="checks">
+                                <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>  Descarga la app<br>
+                                <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>  Regístrate<br>
+                                <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>  y vende!<br><br>
+						</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5">
+                            <img id="section2" class="img-responsive" src="{% static 'img/748820.jpg' %}" alt="">
+                        </div>
+                        <div id="text1" class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <h2>Club@migos_</h2>
+                            <p class="lead">La versión actualizada de Entel está llena de nuevas funciones para gestionar aún más fácil y rápido tus ventas.</p>
+                        </div>
+                    </div>
+                </div>					
+            </div>
+	</section>
+<!-- descarga -->
+    <section class="container-fluid" id="descarga">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-10  col-xs-10 caja-descarga">
+                    <div>
+                        <h2 class="mt-0"><strong style="color:#FF7400">_¿Cómo</strong> funciona?</h2> 
+                        
+                        <div id="checks2">
+                            <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>  Scanear código<br>
+                            <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>  Enviar<br>
+                            <i class="fa fa-check-circle fa-2x" aria-hidden="true"></i>  Listo!<br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 offset-2 col-sm-12 col-xs-12" >
+                            <div id="llave">
+                                <img class="img-responsive hidden-sm hidden-xs" src="{% static 'img/llave.jpg' %}" alt="">
+                            </div>
+                            <a href="https://play.google.com/store/apps?hl=es" target="_blank"><img id="section3" class="img-responsive" src="{% static 'img/playstore.png' %}" alt=""></a>
+                            <a href="https://itunes.apple.com/cl/app/apple-store/id375380948?mt=8" target="_blank"><img id="section4" class="img-responsive" src="{% static 'img/appstore.jpg' %}" alt=""></a>
+                        </div>
+                        <div id="text" class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <h2>Descarga la Nueva App</h2>
+                            <p class="lead">Sólo debes scanear el código de barra y estarás a sólo un click de reportar tus ventas.</p>
+                        </div>
+                    </div>
+                </div>					
+            </div>
+    </section>
+    {% endblock %}
